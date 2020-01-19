@@ -1,0 +1,32 @@
+{
+    "name": "titasgailius/laravel-moonlight",
+    "description": "Batteries included Laravel preset based on InertiaJS, VueJS and TailwindCSS preset.",
+    "keywords": ["laravel", "ui", "moonlight", "inertia", "inertiajs", "vue", "vuejs", "tailwind", "tailwindcss"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Titas Gailius",
+            "email": "titas.gailius@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/ui": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TitasGailius\\Moonlight\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TitasGailius\\Moonlight\\MoonlightServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
