@@ -1,19 +1,20 @@
 # Laravel Moonlight
 
-Laravel Moonlight is a bateries included preset with **Inertia**, **Vue** and **Tailwind** scaffolding.
+Laravel Moonlight is a bateries included **Laravel** preset with **Inertia**, **Vue** and **Tailwind** scaffolding.
 
-Forget about common single-page-application pain points like authentication, routing, CSRF protection and state manegement.
-Focus on what's important- your application.
+Forget common single-page-application pain points and focus on what's important- your application.
 
 ## Features
 
-* Tailwind
-* Inertia
-* Vue
-    * Initial landing page view.
+* [TailwindCSS](https://tailwindcss.com/)
+* [InertiaJS](https://inertiajs.com/)
+* [VueJS](https://vuejs.org/)
+    * Landing page view.
     * Authentication views.
-    * Password confirmation view.
-* Ziggy (use named routes inside your javascript).
+    * Reset password views.
+    * Confrim password view.
+* [Ziggy](https://github.com/tightenco/ziggy) (use named routes inside your javascript).
+* Updated controllers to use inertiajs.
 
 ## Installation
 
