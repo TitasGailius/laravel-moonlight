@@ -1,6 +1,6 @@
 # Laravel Moonlight
 
-Laravel Moonlight is carefully crafted Laravel preset to make your SPA development a breeze.
+Laravel Moonlight is a carefully crafted Laravel preset to make your SPA development a breeze.
 
 Forget about common SPA pain points (authentication, CSRF protection, routing and state management) and focus on your application.
 
