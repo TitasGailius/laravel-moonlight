@@ -188,7 +188,7 @@ class Moonlight extends Preset
     {
         foreach ($files as $source => $destination) {
             if (! $force && file_exists($destination) && ! static::confirmReplacement($destination)) {
-                return;
+                continue;
             }
 
             static::ensureFileDirectoryExists($destination);
