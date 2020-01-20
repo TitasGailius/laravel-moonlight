@@ -9,7 +9,7 @@
         </div>
 
         <div class="h-screen flex flex-col justify-center items-center">
-            <div class="text-gray-600 mb-8 font-thin" style="font-size: 5.375rem">Laravel</div>
+            <div class="text-gray-600 mb-8 font-thin" style="font-size: 5.375rem">Laravel Moonlight</div>
 
             <div class="links">
                 <a class="text-sm text-gray-600 tracking-widest uppercase font-semibold px-6" href="https://laravel.com/docs">Docs</a>
