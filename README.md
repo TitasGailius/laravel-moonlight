@@ -28,7 +28,7 @@ composer require titasgailius/laravel-moonlight
 Once the package has been installed, you may install the scaffolding using the ui Artisan command:
 
 ```bash
-// Basic scaffolding
+// Generate basic scaffolding
 php artisan ui moonlight
 
 // Include authentication scaffolding
