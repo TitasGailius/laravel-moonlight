@@ -40,7 +40,7 @@ class Moonlight extends Preset
     /**
      * Install Moonlight scaffolding.
      *
-     * @param  \Laravel\Ui\UiCommand
+     * @param  \Laravel\Ui\UiCommand $command
      * @return void
      */
     public static function installMoonlight(UiCommand $command)
@@ -63,7 +63,7 @@ class Moonlight extends Preset
     /**
      * Install Moonlight authentication scaffolding.
      *
-     * @param  \Laravel\Ui\AuthCommand
+     * @param  \Laravel\Ui\AuthCommand  $command
      * @return void
      */
     public static function installMoonlightAuth(AuthCommand $command)
@@ -83,8 +83,8 @@ class Moonlight extends Preset
     protected static function updateComposerPackageArray(array $packages)
     {
         return array_merge($packages, [
-            "inertiajs/inertia-laravel" => "^0.2.4",
-            "tightenco/ziggy" => "^0.8.1",
+            'inertiajs/inertia-laravel' => '^0.2.4',
+            'tightenco/ziggy' => '^0.8.1',
         ]);
     }
 
@@ -97,12 +97,12 @@ class Moonlight extends Preset
     protected static function updateNodePackageArray(array $packages)
     {
         return [
-            "@inertiajs/inertia" => "^0.1.7",
-            "@inertiajs/inertia-vue" => "^0.1.2",
+            '@inertiajs/inertia' => '^0.1.7',
+            '@inertiajs/inertia-vue' => '^0.1.2',
             'resolve-url-loader' => '^2.3.1',
             'sass' => '^1.20.1',
             'sass-loader' => '7.*',
-            "tailwindcss" => "^1.1.4",
+            'tailwindcss' => '^1.1.4',
             'vue' => '^2.5.17',
             'vue-template-compiler' => '^2.6.10',
         ] + Arr::except($packages, [

@@ -32,7 +32,6 @@ trait UpdatesPackages
     /**
      * Update the "composer.json" file.
      *
-     * @param  string  $path
      * @param  string  $key
      * @return void
      */
