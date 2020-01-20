@@ -1,8 +1,10 @@
 # Laravel Moonlight
 
-Laravel Moonlight is a bateries included **Laravel** preset with **Inertia**, **Vue** and **Tailwind** scaffolding.
+Laravel Moonlight is carefully crafted Laravel preset to make your SPA development a breeze.
 
-Forget about common SPA pain points and focus on what's important- your application.
+Forget about common SPA pain points (authentication, CSRF protection, routing and state management) and focus on your application.
+
+Bateries-included **Inertia**, **Vue** and **Tailwind** stack.
 
 ## Features
 
