@@ -2,8 +2,8 @@
 
 Laravel Moonlight is a bateries included preset with **Inertia**, **Vue** and **Tailwind** scaffolding.
 
-This preset allows you to start building Laravel single-page-applications right away.
-Forget about commond SPA pain points like authentication, routing, CSRF, state manegement, etc. and focus on what's important- your application.
+Forget about common single-page-application pain points like authentication, routing, CSRF protection and state manegement.
+Focus on what's important- your application.
 
 ## Features
 
