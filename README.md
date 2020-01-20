@@ -14,7 +14,7 @@ Forget about common SPA pain points and focus on what's important- your applicat
     * Reset password views.
     * Confrim password view.
 * [Ziggy](https://github.com/tightenco/ziggy) (use named routes inside your javascript).
-* Updated controllers to use inertiajs.
+* Updated authentication controllers to use inertiajs.
 
 ## Installation
 
