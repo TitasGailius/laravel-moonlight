@@ -11,8 +11,6 @@ use Illuminate\Console\Command;
 
 class Moonlight extends Preset
 {
-    use UpdatesPackages;
-
     /**
      * Console command.
      *
@@ -45,9 +43,8 @@ class Moonlight extends Preset
      */
     public static function installMoonlight(UiCommand $command)
     {
-        static::updateNodePackages();
+        static::updatePackages();
         static::removeNodeModules();
-        static::updateComposerPackages();
         static::copyResources();
 
         if ($command->option('auth')) {
@@ -55,9 +52,7 @@ class Moonlight extends Preset
         }
 
         $command->info('Moonlight scaffolding installed successfully.');
-        $command->comment('Please run "composer install && npm install && npm run dev" to update composer packages and compile your fresh scaffolding.');
-
-        static::removeComposerLock();
+        $command->comment('Please run "npm install && npm run dev" to update composer packages and compile your fresh scaffolding.');
     }
 
     /**
@@ -75,26 +70,12 @@ class Moonlight extends Preset
     }
 
     /**
-     * Update the given composer package array.
-     *
-     * @param  array  $packages
-     * @return array
-     */
-    protected static function updateComposerPackageArray(array $packages)
-    {
-        return array_merge($packages, [
-            'inertiajs/inertia-laravel' => '^0.2.4',
-            'tightenco/ziggy' => '^0.8.1',
-        ]);
-    }
-
-    /**
      * Update the given node package array.
      *
      * @param  array  $packages
      * @return array
      */
-    protected static function updateNodePackageArray(array $packages)
+    protected static function updatePackageArray(array $packages)
     {
         return [
             '@inertiajs/inertia' => '^0.1.7',

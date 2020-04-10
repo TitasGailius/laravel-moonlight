@@ -1,22 +1,21 @@
 # Laravel Moonlight
 
-Laravel Moonlight is a carefully crafted Laravel preset to make your SPA development a breeze.
+Laravel Moonlight is a carefully crafted Laravel preset.
 
-Forget about common SPA pain points (authentication, CSRF protection, routing and state management) and focus on your application.
+The goal of this preset is to provide an elegant scaffolding for your next single-page application.
 
-Bateries-included **Inertia**, **Vue** and **Tailwind** stack.
+Create fully client-side rendered, single-page apps, without much of the complexity that comes with modern SPAs.
 
-## Features
+![Laravel Moonlight](./screenshots/logo.jpg)
+
+---
+
+## Stack
 
 * [TailwindCSS](https://tailwindcss.com/)
 * [InertiaJS](https://inertiajs.com/)
 * [VueJS](https://vuejs.org/)
-    * Landing page view.
-    * Authentication views.
-    * Reset password views.
-    * Confrim password view.
-* [Ziggy](https://github.com/tightenco/ziggy) (use named routes inside your javascript).
-* Updated authentication controllers to use inertiajs.
+* [Ziggy](https://github.com/tightenco/ziggy) (Use named routes in your JS)
 
 ## Installation
 
@@ -61,21 +60,21 @@ project
 │   └───js
 │   |   │ - app.js
 │   |   │ - bootstrap.js
-│   |   │ 
-│   |   └───components // Auto-registered vue components.
+│   |   │
+│   |   └───components // Global components that are auto-registered.
 |   |   |   | - form-input.vue
 |   |   |
 │   |   └───layouts
 |   |   |   | - app.vue
 |   |   |
 │   |   └───pages // This is where you put your application pages.
-│   |       │ - home.vue 
+│   |       │ - home.vue
 │   |       │ - welcome.vue
 │   |       │
 │   |       └───auth
-│   |           │ - login.vue 
-│   |           │ - register.vue 
-│   |           │ - verify.vue 
+│   |           │ - login.vue
+│   |           │ - register.vue
+│   |           │ - verify.vue
 │   |           │
 │   |           └───passwords
 │   |               │ - confirm.vue
@@ -89,6 +88,7 @@ project
 │       │ - app.blade.php
 |
 └───app/Providers
+    | // Here you may register any variables that are shared between pages.
     │ - InertiaServiceProvider.php
 ```
 

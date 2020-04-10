@@ -17,6 +17,10 @@ class MoonlightServiceProvider extends ServiceProvider
         if (class_exists('App\Providers\InertiaServiceProvider')) {
             $this->app->register('App\Providers\InertiaServiceProvider');
         }
+
+        if (class_exists('Laravel\Ui\UiServiceProvider')) {
+            $this->app->register('Laravel\Ui\UiServiceProvider');
+        }
     }
 
     /**
@@ -26,8 +30,10 @@ class MoonlightServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        UiCommand::macro('moonlight', function ($command) {
-            Moonlight::install($command);
-        });
+        if ($this->app->runningInConsole() && class_exists(UiCommand::class)) {
+            UiCommand::macro('moonlight', function ($command) {
+                Moonlight::install($command);
+            });
+        }
     }
 }
