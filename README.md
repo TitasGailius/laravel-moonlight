@@ -91,7 +91,3 @@ project
     | // Here you may register any variables that are shared between pages.
     │ - InertiaServiceProvider.php
 ```
-
-## Notes
-
-If you would want to remove this package after the scaffolding is generated, you would need to add `App\Providers\InertiaServiceProvider::class` to your service providers list in `config/app.php` file.
