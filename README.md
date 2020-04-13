@@ -1,10 +1,8 @@
 # Laravel Moonlight
 
-Laravel Moonlight is a carefully crafted Laravel preset.
+Laravel Moonlight is a carefully crafted Laravel preset for your next SPA application.
 
-The goal of this preset is to provide an elegant scaffolding for your next single-page application.
-
-Create fully client-side rendered, single-page apps, without much of the complexity that comes with modern SPAs.
+Leverage an existing server-side framework to create a fully client-side rendered, single-page application without much of the complexity that comes with a modern SPA.
 
 ![Laravel Moonlight](./screenshots/logo.jpg)
 
