@@ -168,6 +168,9 @@ class Moonlight extends Preset
     protected static function copyFiles(array $files, bool $force = false)
     {
         foreach ($files as $source => $destination) {
+            $source = static::normalizePath($source);
+            $destination = static::normalizePath($destination);
+
             if (! $force && file_exists($destination) && ! static::confirmReplacement($destination)) {
                 continue;
             }
@@ -179,6 +182,17 @@ class Moonlight extends Preset
     }
 
     /**
+     * Make all of the directory separators compatible w/ the current OS
+     *
+     * @param $path
+     * @return string
+     */
+    protected static function normalizePath($path)
+    {
+        return str_replace('/', DIRECTORY_SEPARATOR, $path);
+    }
+
+    /**
      * Ensure that a directory of a given file path exists.
      *
      * @param  string  $file
@@ -186,12 +200,12 @@ class Moonlight extends Preset
      */
     protected static function ensureFileDirectoryExists(string $file)
     {
-        if (! $diretory = Str::beforeLast($file, '/')) {
+        if (! $directory = Str::beforeLast($file, DIRECTORY_SEPARATOR)) {
             return;
         }
 
-        if (! is_dir($diretory)) {
-            mkdir($diretory, 0755, true);
+        if (! is_dir($directory)) {
+            mkdir($directory, 0755, true);
         }
     }
 
