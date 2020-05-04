@@ -186,12 +186,12 @@ class Moonlight extends Preset
      */
     protected static function ensureFileDirectoryExists(string $file)
     {
-        if (! $diretory = Str::beforeLast($file, '/')) {
+        if (! $directory = Str::beforeLast($file, '/')) {
             return;
         }
 
-        if (! is_dir($diretory)) {
-            mkdir($diretory, 0755, true);
+        if (! is_dir($directory)) {
+            mkdir($directory, 0755, true);
         }
     }
 
