@@ -204,7 +204,7 @@ class Moonlight extends Preset
     protected static function getFileDirectory(string $file)
     {
         if (Str::contains($file, '/')) {
-            return Str::beforeLast($file, '/')
+            return Str::beforeLast($file, '/');
         }
     }
 
