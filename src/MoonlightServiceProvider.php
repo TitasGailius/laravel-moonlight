@@ -24,7 +24,7 @@ class MoonlightServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the package services.
+     * Bootstrap any application services.
      *
      * @return void
      */
