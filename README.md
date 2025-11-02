@@ -1,6 +1,3 @@
-I stand with Ukraine | 🇺🇦
-:---: | :---
-
 # Laravel Moonlight
 
 Laravel Moonlight is a carefully crafted Laravel preset for your next SPA application.
